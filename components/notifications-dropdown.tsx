@@ -13,7 +13,7 @@ export function NotificationsDropdown() {
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon" className="relative">
           <Bell className="h-5 w-5" />
-          <span className="absolute -right-1 -top-1 h-3 w-3 rounded-full bg-red-500" />
+          <span className="absolute -right-0 -top-0 h-2 w-2 rounded-full bg-red-500" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-80">

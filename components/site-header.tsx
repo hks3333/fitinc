@@ -15,8 +15,8 @@ export function SiteHeader() {
         />
         <h1 className="text-base font-medium">Welcome Back, John Doe!</h1>
         <div className="ml-auto flex items-center gap-2">
-          <NotificationsDropdown />
           <ModeToggle />
+          <NotificationsDropdown />
         </div>
       </div>
     </header>
