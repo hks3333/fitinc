@@ -29,40 +29,41 @@ import {
 
 const data = {
   user: {
-    name: "John Doe",
-    email: "johndoe@gmail.com",
-    avatar: "/avatars/shadcn.jpg",
+    name: "Jane",
+    email: "jane@gmail.com",
+    avatar: "/ico.png",
   },
+  // Reordered navMain to prioritize core tracker features
   navMain: [
     {
-      title: "Overview",
+      title: "Overview", // Core
       url: "/dashboard",
       icon: IconDashboard,
     },
     {
-      title: "Daily Goals",
+      title: "Daily Goals", // Core
       url: "/dashboard/goals",
       icon: IconTarget,
     },
     {
-      title: "Workout Timer",
-      url: "/dashboard/timer",
-      icon: IconClock,
+      title: "Progress", // Core
+      url: "/dashboard/progress",
+      icon: IconChartBar,
     },
     {
-      title: "Exercises",
+      title: "Exercises", // Supporting
       url: "/dashboard/exercises",
       icon: IconTreadmill,
     },
     {
-      title: "Meal Plan",
+      title: "Meal Plan", // Supporting
       url: "/dashboard/meal-plan",
       icon: IconMeat,
     },
     {
-      title: "Progress",
-      url: "/dashboard/progress",
-      icon: IconChartBar,
+      title: "Workout Timer", // Supporting
+      url: "/dashboard/timer",
+      icon: IconClock,
     },
   ],
   navSecondary: [

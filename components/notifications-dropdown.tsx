@@ -11,7 +11,7 @@ export function NotificationsDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="relative">
+        <Button variant="ghost" size="icon" className="relative cursor-pointer">
           <Bell className="h-5 w-5" />
           <span className="absolute -right-0 -top-0 h-2 w-2 rounded-full bg-red-500" />
         </Button>

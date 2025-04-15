@@ -1,6 +1,6 @@
-import { IconTrendingDown, IconTrendingUp } from "@tabler/icons-react"
+import { IconActivityHeartbeat, IconFlame, IconTargetArrow, IconShoe } from "@tabler/icons-react" // Updated icons (Replaced IconGoal)
 
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/ui/badge" // Keep Badge for potential future use, but remove from current cards
 import {
   Card,
   CardAction,
@@ -12,89 +12,90 @@ import {
 
 export function SectionCards() {
   return (
-    <div className="*:data-[slot=card]:from-primary/5 *:data-[slot=card]:to-card dark:*:data-[slot=card]:bg-card grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
+    // Removed bg-gradient-to-t
+    <div className="*:data-[slot=card]:from-primary/5 *:data-[slot=card]:to-card dark:*:data-[slot=card]:bg-card grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
+      {/* Card 1: Steps Today */}
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>Total Revenue</CardDescription>
+          <CardDescription>Steps Today</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            $1,250.00
+            7,540 <span className="text-base font-normal text-muted-foreground">/ 10,000</span>
           </CardTitle>
           <CardAction>
-            <Badge variant="outline">
-              <IconTrendingUp />
-              +12.5%
-            </Badge>
+            {/* Increased icon size and changed color */}
+            <IconShoe className="size-8 text-primary" />
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Trending up this month <IconTrendingUp className="size-4" />
+            75% towards your daily goal!
           </div>
           <div className="text-muted-foreground">
-            Visitors for the last 6 months
+            Keep going!
           </div>
         </CardFooter>
       </Card>
+      {/* Card 2: Calories Burned */}
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>New Customers</CardDescription>
+          <CardDescription>Calories Burned</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            1,234
+            350 <span className="text-base font-normal text-muted-foreground">kcal</span>
           </CardTitle>
           <CardAction>
-            <Badge variant="outline">
-              <IconTrendingDown />
-              -20%
-            </Badge>
+            {/* Increased icon size and changed color */}
+            <IconFlame className="size-8 text-primary" />
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Down 20% this period <IconTrendingDown className="size-4" />
+            From workouts & activity
           </div>
           <div className="text-muted-foreground">
-            Acquisition needs attention
+            Estimated total for today
           </div>
         </CardFooter>
       </Card>
+      {/* Card 3: Calories Consumed */}
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>Active Accounts</CardDescription>
+          <CardDescription>Calories Consumed</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            45,678
+            1,200 <span className="text-base font-normal text-muted-foreground">/ 2,000 kcal</span>
           </CardTitle>
           <CardAction>
-            <Badge variant="outline">
-              <IconTrendingUp />
-              +12.5%
-            </Badge>
+             {/* Increased icon size and changed color */}
+             <IconActivityHeartbeat className="size-8 text-primary" /> {/* Placeholder icon */}
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Strong user retention <IconTrendingUp className="size-4" />
+            On track with nutrition plan
           </div>
-          <div className="text-muted-foreground">Engagement exceed targets</div>
+          <div className="text-muted-foreground">
+            Logged via Meal Plan
+          </div>
         </CardFooter>
       </Card>
+       {/* Card 4: Active Goal */}
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>Growth Rate</CardDescription>
+          <CardDescription>Active Goal</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            4.5%
+            Run 5k
           </CardTitle>
           <CardAction>
-            <Badge variant="outline">
-              <IconTrendingUp />
-              +4.5%
-            </Badge>
+            {/* Increased icon size and changed color */}
+            <IconTargetArrow className="size-8 text-primary" /> {/* Replaced IconGoal */}
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Steady performance increase <IconTrendingUp className="size-4" />
+            Target: Next Tuesday
           </div>
-          <div className="text-muted-foreground">Meets growth projections</div>
+          <div className="text-muted-foreground">
+            Progress: 60%
+          </div>
         </CardFooter>
       </Card>
     </div>
