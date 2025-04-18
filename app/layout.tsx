@@ -15,7 +15,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Fitme",
+  title: "Fit Inc.",
   description: "Fitness Redefined",
 };
 

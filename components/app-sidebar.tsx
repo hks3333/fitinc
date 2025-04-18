@@ -72,11 +72,11 @@ const data = {
       url: "/dashboard/settings",
       icon: IconSettings,
     },
-    {
-      title: "Profile",
-      url: "/dashboard/profile",
-      icon: IconUser,
-    },
+    // {
+    //   title: "Profile",
+    //   url: "/dashboard/profile",
+    //   icon: IconUser,
+    // },
   ],
 }
 
